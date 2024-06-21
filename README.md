@@ -2,6 +2,40 @@
 
 This is a simple Todo application built with Vite and Tailwinf for the frontend, and Spring Boot for the backend. The frontend communicates with the backend through a RESTful API and uses Tailwind CSS for styling.
 
+## Knowledge Gaps
+- Tailwind
+- Redis
+- Typescriot <omit>
+
+interface Props {
+  a?: number;
+  b?: string;
+}
+
+or 
+
+interface Todo {
+  title: string;
+  description: string;
+}
+ 
+function updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {
+  return { ...todo, ...fieldsToUpdate };
+}
+ 
+const todo1 = {
+  title: "organize desk",
+  description: "clear clutter",
+};
+ 
+const todo2 = updateTodo(todo1, {
+  description: "throw out trash",
+}); partial
+
+
+
+
+
 ## Table of Contents
 
 - [Features](#features)

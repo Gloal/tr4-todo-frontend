@@ -38,7 +38,7 @@ function App() {
     <>
       <div className="h-150 w-screen p-3 bg-red-800 text-bold m-5 ">TODO!!</div>
       {error && <p classname="text-red-500 mb-4">{error}</p>}
-      <TodoForm onAddTodo={handleAdTodo}/>
+      <TodoForm onAddTodo={handleAddTodo}/>
       <TodoList todos={todos}/>
     </>
   );
